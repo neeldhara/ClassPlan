@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Plan Dates</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&family=Henny+Penny&family=Pompiere&display=swap');
+  </style>
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <h1>Course Plan Generator</h1>
+  <div>
+    <form>
+      <input type="checkbox" id="monday" name="day">&nbsp;Monday &nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="tuesday" name="day">&nbsp;Tuesday &nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="wednesday" name="day">&nbsp;Wednesday &nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="thursday" name="day">&nbsp;Thursday &nbsp;&nbsp;&nbsp;
+      <input type="checkbox" id="friday" name="day">&nbsp;Friday
+    </form>
+  </div>
+  <br>
+  <label><input type="checkbox" id="includeHolidays" name="includeHolidays"> Include Holidays</label>
+  <br>
+  <label><input type="checkbox" id="indicateRestrictedHolidays"> Indicate Restricted Holidays</label>
+  <br>
+  <br>
+  <button class="custom-button" onclick="generateDates()">
+    Generate Dates for Course Plan
+  </button>
+  <br><br>
+  <pre><ul class="sourceCode plaintext" id="datesList"></pre>
+  </ul>
+
+
+</body>
+
+</html>
